@@ -18,7 +18,7 @@ $news .= $title."\n".$url."\n\n";
 }
 /////////////////////////////////////
 //token 
-$token_line = "aZwx0YSUCbOhljuJpTJAng2FUn2VaEH72QKBr6JZZzU";
+$token_line = "JhQMFHhN9gwXGZZAUfksaWQqAiyUkAhpo6kuvtU02s6";
 
 $message = $_REQUEST['message'];
 $chOne = curl_init(); 
