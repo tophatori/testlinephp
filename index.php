@@ -8,7 +8,7 @@
 	$messages = [];
 	$messages['replyToken'] = $replyToken;
     $messages['messages'][0] = getFormatTextMessage("เด็กกำลังโต");
-    $messages['messages'][0] = getFormatTextMessage("โตแล้วนะ");
+    $messages['messages'][1] = getFormatTextMessage("โตแล้วนะ");
 	$encodeJson = json_encode($messages);
 	$LINEDatas['url'] = "https://api.line.me/v2/bot/message/reply";
   	$LINEDatas['token'] = "tr3frM2Ufc6qk7lmLRrC8v4eXPNW4nn6RUZ0zPwnoZduedpJu5cLEihBPVhYkL3Sh+PW+9jeF8xlkXZWd5ThnGCtZAfGEgJYmC3vWpX71QrhWhvFyLU7mc9LtF4Szgu5s5sjlHqFAVkaAo3e3WgKsgdB04t89/1O/w1cDnyilFU=";
