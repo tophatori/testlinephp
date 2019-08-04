@@ -13,7 +13,7 @@ $xml = new SimpleXmlElement($contents);
 $url = $xml->channel->item[$i]->link;
 $title = $xml->channel->item[$i]->title;
 $description = $xml->channel->item[$i]->description;
-$news .= $title."\n".$url."\n\n";
+$news .= $title."\n".$url."\n".$description."\n\n";
 
 }
 /////////////////////////////////////
