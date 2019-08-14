@@ -15,14 +15,14 @@ $str_input =  explode("รูป", $text);
 
 $str_path_image =  'http://vpn.idms.pw:9977/polis/imagebyte?id=' . $str_input['1'];
 
-sendLineNotify($str_input['1']);
+sendLineNotify($text);
 
 $messages = [];
 $messages['replyToken'] = $replyToken;
 $messages['messages'][0] = getFormatTextMessage("เอ้ย ถามอะไรก็ตอบได้");
 $encodeJson = json_encode($messages);
 $LINEDatas['url'] = "https://api.line.me/v2/bot/message/reply";
-$LINEDatas['token'] = "WxsvRSt1nS5KyO1JGkPeKPd1GifWm5N+AuloKU4aIdb0OVJ/KYVGqift7JngSEBIfeuA9XqfN5px9AkjjSzbQuoJpKYP9ZL28UTGWfjlNbgDkBgMx/4F4dMKQK76uf7spBBX1vaFS9UobtaHPgeeiQdB04t89/1O/w1cDnyilFU=";
+$LINEDatas['token'] = "lOLFzVWNWM3LxiqTn5DVkDpfn7wxfiwj7O+v75mzsz4ZoLyL9zPvFrS0AX7N3wA5m0IwK3HJZ/7Uh/YDH3DFU/gaBek2kySbx/w7/+F8w+GQaapfgKvcu6ZExksUX9AhshyGpECgt7D7EmlsiPDKjwdB04t89/1O/w1cDnyilFU=";
 $results = sentMessage($encodeJson, $LINEDatas);
 /*Return HTTP Request 200*/
 http_response_code(200);
